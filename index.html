@@ -105,7 +105,7 @@
           />
         </div>
         <h3>Acerca de mi</h3>
-        <div class="btn-edit" onclick="cambiar_parrafo()">
+        <div class="btn-edit" onclick="cambiar_acercade()">
           <a class="btn-right">
             <i class="bi bi-pencil-fill"></i>
           </a>
@@ -127,7 +127,7 @@
       </section>
       <section class="container" id="experiencia">
         <h3>Experiencia</h3>
-        <div class="btn-edit" onclick="cambiar_parrafo()">
+        <div class="btn-edit" onclick="cambiar_experiencia()">
           <a class="btn-right">
             <i class="bi bi-pencil-fill"></i>
           </a>
@@ -139,10 +139,18 @@
             2013 - Agosto 2013
           </p>
         </div>
+        <div>
+          <input
+            id="edit-experiencia"
+            type="text"
+            oninput="myFunction2(this.value)"
+            style="display: none"
+          />
+        </div>
       </section>
       <section class="container" id="educacion">
         <h3>Educacion</h3>
-        <div class="btn-edit" onclick="cambiar_parrafo()">
+        <div class="btn-edit" onclick="cambiar_educacion()">
           <a class="btn-right">
             <i class="bi bi-pencil-fill"></i>
           </a>
@@ -152,6 +160,14 @@
             Nivel primario, finalizado, cedro azul, años. Nivel secundario, no
             finalizado.
           </p>
+        </div>
+        <div>
+          <input
+            id="edit-educacion"
+            type="text"
+            oninput="myFunction2(this.value)"
+            style="display: none"
+          />
         </div>
       </section>
       <section class="container" id="skills">
@@ -181,7 +197,7 @@
         <h3>Proyectos</h3>
         <div id="text-proyectos">
           <h6>Portfolio Web</h6>
-          <div class="btn-edit" onclick="cambiar_parrafo()">
+          <div class="btn-edit" onclick="cambiar_proyectos()">
             <a class="btn-right">
               <i class="bi bi-pencil-fill"></i>
             </a>
@@ -192,9 +208,16 @@
             <a href="">Links de referencia</a>
           </p>
         </div>
+        <div>
+          <input
+            id="edit-proyectos"
+            type="text"
+            oninput="myFunction2(this.value)"
+            style="display: none"
+          />
+        </div>
       </section>
     </main>
-
     <footer>
       <div class="container">
         <p>&copy; 2021 Martin Espejo</p>
